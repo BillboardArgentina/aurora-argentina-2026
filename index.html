@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>AURORA vuelve a Argentina en 2026</title>
+
+  <!-- Preview WhatsApp -->
+  <meta property="og:title" content="AURORA vuelve a Argentina en 2026 🇦🇷">
+  <meta property="og:description" content="Confirmado: AURORA anuncia su regreso a Argentina en 2026">
+  <meta property="og:image" content="https://i.imgur.com/uD1myyT.jpeg">
+  <meta property="og:type" content="website">
+
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    img, video {
+      max-width: 100%;
+      max-height: 100vh;
+      display: none;
+    }
+
+    img {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- FOTO -->
+  <img id="foto" src="https://i.imgur.com/uD1myyT.jpeg" alt="Aurora">
+
+  <!-- VIDEO -->
+  <video id="video" muted loop playsinline>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById('foto').style.display = 'none';
+      const video = document.getElementById('video');
+      video.style.display = 'block';
+      video.play();
+    }, 3000); // 3 segundos
+  </script>
+
+</body>
+</html>
+
